@@ -4,9 +4,15 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build",
+    "build": "parcel build index.html",
     "test": "jest"
+  
   },
+  "alias": {
+		"process": {
+			"global": "{}"
+		}
+	},
   "author": "",
   "license": "ISC",
   "dependencies": {

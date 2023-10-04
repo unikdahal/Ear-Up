@@ -1,14 +1,24 @@
-const Shimmer = () =>{
-    return <div className="shimmer-container">
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-        <div className="shimmer-card"></div>
-    </div>
-}
+const Shimmer = () => {
+    return (
+      <div className="flex flex-wrap gap-8">
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
 
-export default Shimmer;
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+
+        <div className="text-white p-1 w-52 h-96 bg-gray-300 m-2 box-border rounded-lg"></div>
+      </div>
+    );
+  };
+  
+  export default Shimmer;
+  

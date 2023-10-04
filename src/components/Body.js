@@ -38,6 +38,7 @@ const Body = () => {
   };
 
   const onlineStatus = useOnlineStatus();
+  
 
   return (
     <div className="body bg-slate-100">
@@ -76,7 +77,7 @@ const Body = () => {
       </div>
 
       <div className="res-container max-w-[1496px] mx-auto flex flex-wrap gap-3">
-        {filteredRestaurant === undefined ? (
+        {filteredRestaurant=== undefined || filteredRestaurant.length===0? (
           <Shimmer />
         ) : (
           filteredRestaurant.map((restaurant) => (

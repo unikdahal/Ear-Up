@@ -18,7 +18,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.3007589&lng=85.82942589999999"
+      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.3007589&lng=85.82942589999999"
     );
     const res = await data.json();
     setStateVariable(res);
@@ -38,7 +38,6 @@ const Body = () => {
   };
 
   const onlineStatus = useOnlineStatus();
-  
 
   return (
     <div className="body bg-slate-100">
@@ -77,7 +76,7 @@ const Body = () => {
       </div>
 
       <div className="res-container max-w-[1496px] mx-auto flex flex-wrap gap-3">
-        {filteredRestaurant=== undefined || filteredRestaurant.length===0? (
+        {filteredRestaurant === undefined || filteredRestaurant.length === 0 ? (
           <Shimmer />
         ) : (
           filteredRestaurant.map((restaurant) => (
